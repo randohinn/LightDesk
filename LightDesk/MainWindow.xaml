@@ -1,0 +1,20 @@
+﻿<Window x:Class="LightDesk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LightDesk"
+        mc:Ignorable="d"
+        Title="Light Control" Height="450" Width="800" Closing="Window_Closing">
+    <StackPanel>
+        <ComboBox x:Name="COMSelectionBox">
+        </ComboBox>
+        <Button x:Name="COMConnectButton" Click="COMConnectButton_Click">Connect</Button>
+        <StackPanel Orientation="Horizontal">
+            <Button Height="32" Width="32" x:Name="RedButton" Click="RedButton_Click">RED</Button>
+            <Button Height="32" Width="32" x:Name="GreenButton" Click="GreenButton_Click">GREEN</Button>
+            <Button Height="32" Width="32" x:Name="BlueButton" Click="BlueButton_Click">BLUE</Button>
+            <Button x:Name="FadeButton" Click="FadeButton_Click">Red Fade</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
